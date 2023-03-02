@@ -2,12 +2,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 .colorlay{
     background-color: orange;
     width: 100%;
     padding-top: 30px;
-    height: 400px;
+    height: 300px;
     text-align: center;
 }
 .colorlay a{
@@ -32,12 +33,11 @@ body{
     transform: scale(1);
 }
 .cenpage{
-    width: 1000px;
+    width: 80%;
     height: 500px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: auto;
+    position: relative;
+    top: -100px;
     display: flex;
     z-index: 1;
 }
@@ -94,9 +94,10 @@ body{
     }
 }
 @media(max-width:730px){
+    .colorlay{
+        height: 200px;
+    }
     .cenpage {
-        position: absolute;
-        top: 90%;
         width: 500px;
         display: block;
         height: auto;
@@ -122,8 +123,6 @@ body{
 @media(max-width:550px){
 
     .cenpage {
-        position: absolute;
-        top: 90%;
         width: 380px;
         display: block;
         height: auto;
@@ -144,10 +143,10 @@ body{
     }
 }
 @media(max-width:450px){
-    
+    .colorlay{
+        height: 200px;
+    }
     .cenpage {
-        position: absolute;
-        top: 90%;
         width: 80%;
         display: block;
         height: auto;
@@ -172,6 +171,9 @@ body{
     }
 }
 @media(max-width:352px){
+    .colorlay{
+        height: 200px;
+    }
     .colorlay a{
         padding: 10px;
         font-size: small;
