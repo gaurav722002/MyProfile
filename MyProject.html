@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="letter-g.png" type="image/x-icon">
+    <title>My Projects</title>
+    <style>
+        
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+        .head{
+            width: 100%;
+            height: 100px;
+            padding-top: 55px;
+            background-color: black;
+            text-align: center;
+        }
+        .navbar a{
+            position: relative;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 0.15cm;
+            text-decoration: none;
+        }
+        .navbar a::after{
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            transform: scale(0);
+            transition: 0.25s;
+        }
+        .navbar a:hover::after{
+            transform: scale(1);
+        }
+        .headline{
+            position: relative;
+            top: -30px;
+            width: 100%;
+            height: 400px;
+            background-image: url('mywork.jpg');
+            background-size: contain;
+            }
+        .headline .text{
+            padding: 40px;
+            font-size: 22px;
+            color: white;
+        }
+        .headline h1{
+            text-align: center;
+        }
+        .headline .text li{
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .proj{
+            padding: 20px;
+            text-align: center;
+        }
+        .proj img{
+            border-radius: 5%;
+            width: 70%;
+        }
+        .proj .des{
+            width: 70%;
+            text-align: left;
+            padding-top: 60px;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+        .proj .des span{
+            color: blue;
+        }
+        .gallery h1{
+            text-align: center;
+            color: blue;
+        }
+        .slides{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .slides .slide{
+            position: relative;
+            flex-basis: 25%;
+            overflow: hidden;
+        }
+        .slides .slide img{
+            width: 120%;
+            height: 180px;
+            transition: 1s;
+        }
+        .slides .text{
+            display: none;
+        }
+        .slides .slide button{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            padding: 20px;
+            background-color: blue;
+            color: white;
+            border: 0;
+            outline: 0;
+        }
+        .slides button a{
+            color: white;
+            text-decoration: none;
+        }
+        .slides .slide:hover img{
+            filter: blur(5px);
+            width: 110%;
+        }
+        .slides .slide:hover .text{
+            display: initial;
+        }
+        .end{
+            position: relative;
+            top: -10px;
+            background-color: blue;
+            height: 50px;
+            letter-spacing: 0.2cm;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            padding-top: 30px;
+        }
+        .end a{
+            color: white;
+            text-decoration: none;
+        }
+        .end p{
+            margin: 0;
+        }
+        .end p::after{
+            content: 'gaurav72002';
+            padding-left: 5px;
+            font-size: small;
+        }
+        /* responsive web design */
+        @media(max-width:850px){
+            .head .navbar a{
+                font-size: 15px;
+                padding: 10px;
+                letter-spacing: 0.1cm;
+            }
+            .headline .text li{
+                font-size: 18px;
+            }
+            .gallery h1{
+                font-size: 20px;
+            }
+            .end{
+                font-size: 10px;
+                letter-spacing: 0.05cm;
+            }
+        }
+        @media(max-width:600px){
+            .slides button a{
+            font-size: 10px;
+        }
+        }
+        /* responsive web design */
+</style>
+</head>
+<body>
+    <div class="head">
+        <div class="navbar"> 
+            <a href="index.html">Home</a>
+            <a href="about.html" target="_blank">About Me</a>
+            <a href="">My Work</a>
+        </div>
+    </div>
+    <div class="headline">
+        <div class="text">
+            <h1>PROJECTS</h1>
+            <p>
+                <li>One-by-One Project description</li>
+                <li>Responsive Websites</li>
+                <li>Some projects are ongoing in this page</li>
+                <li>Direct link to visit</li>
+            </p>
+        </div> 
+    </div>
+    <div class="proj">
+        <div class="proj1">
+            <h1>1. Tour and Travels</h1>
+            <div class="img"><img src="proj1.jpg.png" alt=""></div>
+            <div class="des">
+                <p style="font-weight: 900;"><span>Languages Used:  </span>HTML , CSS and JavaScript</p>
+                <p>This is my first project reagrding Tour and travels segment . While initiating this project
+                    , I have only basic knowledge of HTML and CSS and a little javascript . In this project , i've made countless 
+                    correction regarding postions , margins and etc . This is the most time taking project to build-in but also 
+                    helpful to  concrete the basic concepts.
+                    <span>VISIT LINK IS GIVEN BELOW </span>   
+                </p>
+            </div>   
+        </div>
+        <div class="proj2">
+            <h1>2. G-FOODs</h1>
+            <div class="img"><img src="proj2.png" alt=""></div>
+            <div class="des">
+                <p style="font-weight: 900;"><span>Languages Used:  </span>HTML , CSS and JavaScript</p>
+                <p>This is my second project on the topic of hotel and resturant profile. In this project , some functional image gallery
+                    with beautiful body slides along with simple footer is built by me . This project contains an amazing color 
+                    combination which makes it more dramatic and beautiful.
+                    <span>VISIT LINK IS GIVEN BELOW </span>   
+                </p>
+            </div>   
+        </div>
+        <div class="proj1">
+            <h1>3. GPremises</h1>
+            <div class="img"><img src="proj3.png" alt=""></div>
+            <div class="des">
+                <p style="font-weight: 900;"><span>Languages Used:   </span>HTML , CSS and JavaScript</p>
+                <p>This is my third project on the topic of real estate and properties or regarding construction ,
+                    which contains two types of image slider, one is fully animated or autocontrolled and another is automatic along
+                    with manual controls (dot-type-button). This project also have a beautiful image gallery .
+                    <span>VISIT LINK IS GIVEN BELOW </span>   
+                </p>
+            </div>   
+        </div>
+        <div class="proj1">
+            <h1>4. G4Gadgets (G For Gadgets)</h1>
+            <div class="img"><img src="proj4.png" alt=""></div>
+            <div class="des">
+                <p style="font-weight: 900;"><span>Languages Used:  </span>HTML , CSS and JavaScript</p>
+                <p>It is one of my most advanced project insipire from <span>SONY.com</span> contains a very beautiful and 
+                    advance dropdown navbar . Visit this site to see more graphics mention in this site . 
+                    <span>VISIT LINK IS GIVEN BELOW</span> 
+                </p>
+            </div>   
+        </div>
+    </div>
+    <div class="gallery">    
+        <h1>PROJECTS USING HTML, CSS AND JS</h1>
+    <div class="slides">
+        <div class="slide">
+            <img src="proj1.jpg.png" alt="">
+            <div class="text">
+                <button><a href="https://gaurav722002.github.io/TourTravelProject.github.io/" target="_blank">VISIT SITE</a></button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="proj2.png" alt="">
+            <div class="text">
+                <button><a href="https://gaurav722002.github.io/gfoods.github.io/" target="_blank">VISIT SITE</a></button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="proj3.png" alt="">
+            <div class="text">
+                <button><a href="https://gaurav722002.github.io/gPremises.github.io/" target="_blank">VISIT SITE</a></button>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="proj4.png" alt="">
+            <div class="text">
+                <button ><a href="https://gaurav722002.github.io/G4Gadgets.github.io/" target="_blank">VISIT SITE</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="end"><p>ALL SITES ARE HOSTED BY GITHUB <a href="http://github.com/gaurav722002" target="_blank"><i class="fa fa-github"></i></a></p></div>
+</body>
+</html>

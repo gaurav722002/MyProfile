@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="letter-g.png" type="image/x-icon">
+    <title>About Gaurav</title>
+    <style>
+        body{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .colorlay{
+            width: 100%;
+            height: 500px;
+            padding-top: 50px;
+            background-color: orange;
+            text-align: center;
+        }
+        .colorlay a {
+            font-size: 20px;
+            color: white;
+            letter-spacing: 0.15cm;
+            text-decoration: none;
+            padding: 20px;
+            position: relative;
+        }
+        .colorlay a::after{
+            content: ' ';
+            background-color: white;
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.25s;
+            transform: scale(0);
+        }
+        .colorlay a:hover::after{
+            transform: scale(1);
+        }
+        .colorlay .head{
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.05cm;
+            padding-top: 50px;
+        }
+        .colorlay .head span{
+            color: black;
+        }
+        .greylay{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: rgb(63, 63, 63);
+            color: black;
+        }
+        .greylay .img{
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-color: rgb(63, 63, 63);
+        }
+        .greylay img{
+            position: absolute;
+            top: -50px;
+            left: 35%;
+            border-radius: 50%;
+        }
+        .greylay .text{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Genos', sans-serif;
+            background-color: rgb(63, 63, 63);
+            color: white;
+            font-size: 20px;
+            word-spacing: 0.05cm;
+            line-height: 1cm;
+            width: 100%;
+        }
+        .greylay span{
+            color: rgb(174, 0, 255);
+        }
+        .greylay .text h3{
+            font-size: 35px;
+            letter-spacing: 0.1cm;
+            text-align: center;
+            color: orange;
+        }
+        .follow{
+            padding: 20px 0;
+            text-align: center;
+            height: auto;
+            background-color: rgb(63, 63, 63);
+            color: white;
+        }
+        .follow h1{
+            font-family: 'Genos', sans-serif;
+            margin: 0;
+            font-size: 20px;
+        }
+        .follow i{
+            font-size: 30px;
+            padding: 20px;
+            color: orange;
+        }
+        #lastp{
+            margin-bottom: 0;
+        }
+        /* Resposnive Start*/
+        @media(max-width:1050px){
+            .greylay img{
+                width: 38%;
+                top: -30px;
+            }
+        }
+        @media(max-width:950px){
+            .greylay img{
+                width: 44%;
+            }
+        }
+        @media(max-width:985px){
+            .colorlay .nav a{
+                letter-spacing: 0.08cm;
+                font-size: 15px;
+                padding: 10px;
+            }
+            .colorlay{
+                height: 400px;
+                padding-top: 100px;
+            }
+            .colorlay .head{
+                font-size: 40px;
+            }
+        }
+        @media (min-width:580px) and (max-width:780px){
+            .greylay img{
+                top: 0;
+                left: 25%;
+                width: 45%;
+            }
+        } 
+        @media(max-width:780px){
+            .colorlay{
+                height: 300px;
+                padding-top: 100;
+            }
+            .colorlay .head{
+                font-size: 30px;
+            }
+        }
+        @media(max-width:580px){
+            .greylay img{
+                top: 0;
+                width: 70%;
+                left: 15%;
+            }
+            .colorlay{
+                height: 200px;
+                padding-top: 50px;
+            }
+            .colorlay .head{
+                font-size: 20px;
+            }
+        }
+        @media(max-width:400px){
+            .colorlay .nav a{
+                padding: 10px;
+                font-size: 12px;
+            }
+            .colorlay .head{
+                font-size: 15px;
+            }
+        }
+        /* Resposnive End*/
+
+    </style>
+</head>
+<body>
+    <div class="colorlay">
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="">About Me</a>
+            <a href="MyProject.html" target="_blank">My Work</a>
+        </div>
+        <div class="head">
+            <h4>WELCOME TO ABOUT ME PAGE</h4>
+            <h1>Hi. I am <span>Gaurav !</span></h1>
+        </div>
+    </div>
+    <div class="greylay">
+        <div class="img"><img src="profile3.jpg" alt=""></div>
+        <div class="text"><div class="start">
+            <h3>STARTING WITH</h3>
+            <p>Basic HTML, CSS , and Javascript ; I decided to continue my career with web development.
+                I am in road to become a <span>FULL STACK DEVELOPER</span> whereas I am already aquired my certificate 
+                in <span>FRONT END DEVELOPMENT</span> which is also responsible to make me skill full; so that I am able to make 
+                my profile with zero difficulties by just using scratch
+            </p>
+        </div>
+        <div class="wagtail">
+            <h3>WAGTAIL</h3>
+            <p>Right now , I am in practise of <span>WAGTAIL</span> which is an open source content management system.
+            Being a developer , I don't believe in to build the stuffs from drag and drop operation. But as per the advancment 
+                of time , it is important to step forward with respect to technology . For small changes regarding announcements ,
+                images , blogs and etc one cannot prefer a developer everytime ; here a content manager plays a vital role in this
+                sceneraio . <span>WAGTAIL</span> helps to take these type of small modifications in existing project without stucking
+                in document object model and code .
+        </p>
+        </div>
+        <div class="js">
+            <h3>JAVASCRIPT LIBRARIES</h3>
+            <p><span>JAVASCRIPT</span> which is a scriptive language plays an imporatant role to build functions animations, actions 
+            or in other words , advances the the UI of the website .
+            <h4>JQuery</h4>
+            <br>
+            But function or object code of the <span>JAVASCRIPT</span> are lengthy and time requiring to write , here 
+            one Javascript library named <span>JQuery</span> helps to complete the work in shortify manner in less time.
+            JQuery introduces $ sign and replaces the lengthy statement of " <span>document.querySelector("")</span> "
+            </p>
+            <h4>React JS</h4>
+            <br>
+            <p id="lastp">The most powerful library of JAVASCRIPT is <span>React Js</span> which is quite difficult to practise as compare to other 
+                libaries but it is very useful to create a fast moving web application . It restricts the page load while moving from
+                example.com to example.com/blog , many massive websites uses <span>React JS</span> as base to create their application.
+                YouTube is one of the example .
+            </p>
+        </div>
+    </div>
+</div>
+<div class="follow">
+    <h1>FOLLOW ME</h1>
+    <p>
+        <a href=""><i class="fa fa-instagram"></i></a>
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-google"></i></a>
+        <a href="http://github.com/gaurav722002" target="_blank"><i class="fa fa-github"></i></a>
+    </p>
+</div>
+
+</body>
+</html>
