@@ -170,14 +170,17 @@ body{
         padding-top: 100px;
     }
 }
+@media(max-width:400px){
+        .colorlay a{
+            padding: 5px;
+            letter-spacing: 0.05cm;
+            font-size: 15px;
+        }
+    }
 @media(max-width:352px){
     .colorlay{
         height: 200px;
     }
-    .colorlay a{
-        padding: 10px;
-        font-size: small;
-        font-weight: 900;
-    }
+   
     
 }
